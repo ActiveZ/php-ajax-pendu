@@ -1,0 +1,86 @@
+body{
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  text-align: center;
+  background-color: black;
+}
+
+input {
+  width: 200px;
+  text-align: center;
+}
+
+#content {
+  border: ridge 20px red;
+}
+
+button{
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  text-align: inherit;
+  outline: none;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+#content{
+  width:50%;
+  /* width:calc(50% - 8rem); */
+  background:rgb(218, 218, 218);
+  margin:auto;
+  margin-top:4rem;
+  color:rgb(90, 90, 90);
+  padding:2rem 4rem;
+}
+
+.buttonEnvoyer{
+  background: #086232;
+  color:#81eea1;
+  font-weight: 700;
+  font-size:1.5rem;
+  padding:0.6rem 1.2rem;
+  border-radius:0.7rem;
+  transition: all 0.2s ease-out;
+}
+
+.buttonEnvoyer:hover{
+    color:white;
+    background: #034b25;
+    letter-spacing:0.05rem;
+}
+
+.buttonReset{
+  background: #086232;
+  color:#81eea1;
+  font-weight: 700;
+  font-size:1.5rem;
+  padding:0.6rem 1.2rem;
+  border-radius:0.7rem;
+  transition: all 0.2s ease-out;
+}
+
+.buttonReset:hover{
+    color:white;
+    background: #034b25;
+    letter-spacing:0.05rem;
+  }
+
+.buttonReset:active, .buttonEnvoyer:active {
+  background-color: red;
+}
