@@ -9,7 +9,7 @@ buttonEnvoyer.addEventListener('click', () => {
 })
 
 buttonReset.addEventListener('click', () => {
-  setNbMystere({'nombre' : 0})
+  setNbMystere()
 })
 
 ////////////////////////////// LE JEU //////////////////////////////////////////////
