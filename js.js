@@ -17,7 +17,7 @@ buttonReset.addEventListener('click', () => {
   // le joueur fait son essai
   async function setEssai(){
     let essai = document.getElementById('essai').value;
-    if (isNaN (essai) || essai < 1) return // sortir pour éviter l'incrémentation du nombre de coup sur valeurs invalides
+    if (isNaN (essai) || essai < 1 || essai > 100) return // sortir pour éviter l'incrémentation du nombre de coup sur valeurs invalides
 
     let response, data, nbMystere, nbCoup;
     
